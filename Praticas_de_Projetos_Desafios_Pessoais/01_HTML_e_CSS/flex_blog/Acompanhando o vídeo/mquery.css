@@ -1,0 +1,136 @@
+@charset "utf8";
+
+@media screen and (min-width: 768px){
+
+    header section div.superinfo{
+
+        font-size: .9em;
+
+    }
+
+    header section.bgnav{
+        justify-content: space-around;
+        
+        
+
+
+    
+    }
+
+    header section div.conteudonav{
+        display: flex;
+        
+        flex-direction: row;
+        justify-content:space-between ;
+        align-items: center;
+
+        width: 80%;                
+                
+    }
+
+    header div.logo{        
+        font-size: 1.7em;
+
+    }
+
+    header div#idnavret{
+        display: flex;
+        font-size: 1em;
+    }
+
+    header div.cmenuh{
+        display: none;
+    }
+
+    /*-----------------------------Main------------------------------*/
+    /*--------------------Article-------------------*/
+    article {
+        margin: auto;
+        width: 90%;
+    }
+
+    article h1{
+        font-size: 3em;
+        margin: 0;
+        max-width: 80%;
+        width: 50%;
+    }
+
+
+
+    article section.sobre{
+        justify-content: space-around;
+        max-width: 800px;
+       
+        
+    }
+
+    article div.txtsobre{
+        max-width: 45%; 
+        
+    }
+
+    article div.imgjuntas{
+        flex-direction: row;
+        justify-content: space-around;
+        min-width:55%;
+        max-width: 40%;
+        
+    }
+
+
+    article section.produtos{
+        align-items: flex-end;
+        width: 90%;
+        max-width: 800px;
+        align-items: flex-end;
+    }
+
+    article  div.cimgprod{
+        
+        max-width: 250px;
+        padding: 0px;
+        
+        margin-left: 0px;
+        border-top: 3px solid blueviolet;
+        border-radius: 20px;
+
+        
+        
+        background-color: rgba(245, 245, 245, 0.581);       
+        
+    }
+
+    /* Preços*/
+
+    article section.preços{
+        
+        align-items: flex-end ;
+        
+    }
+
+    article section.preços div.preço-item{
+        
+        min-width: 240px
+        
+    }
+
+    article section.preços div#ouro{
+        order: 0;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

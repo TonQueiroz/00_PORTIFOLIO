@@ -1,0 +1,92 @@
+@charset "utf8";
+
+@media screen and (min-width: 768px){
+
+    header div.superinfo{
+
+        font-size: .9em;
+
+    }
+
+    header div.bgnav{
+        justify-content: center;
+        
+    
+    }
+
+    header div.conteudonav{
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 2.1em;
+        width: 75%;
+        max-width: 80vw;
+
+        
+    }
+
+    header div#idnavret{
+        font-size: .9em;
+        display: flex;
+
+    }
+
+    header div.cmenuh{
+        display: none;
+    }
+
+    /*-----------------------------Main------------------------------*/
+    /*--------------------Article-------------------*/
+    article {
+        margin: auto;
+        width: 90%;
+    }
+
+    article h1{
+        font-size: 3em;
+        margin: 0;
+    }
+
+
+
+    article div.sobre{
+        display: flex;
+        width: 85%;
+        max-width: 800px;        
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: aqua;
+        flex-wrap: nowrap;
+        
+    }
+
+    article div.txtsobre{
+        
+        max-width: 400px;
+        min-width: 300px;
+    }
+
+    article div.imgsobre{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        align-items: baseline;
+        align-content: end;
+
+        
+
+
+        
+    }
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,199 @@
+@charset "utf8";
+
+/* ESTILOS */
+
+/*VARIAVEIS */
+
+/* cORES
+
+#732229
+#D9042B
+#9EA4A5
+#2D2E2F
+#3F3A36
+*/
+
+
+:root {
+    --cor0: #2D2E2F;
+    --cor1: #9EA4A5;
+    --cor2: #732229;
+    --cor3: #7F1B1D;
+    --cor4: #5e181b;
+    --cor5: 
+
+
+    --fonte0: arial, verdana, helvetica, sans-serif;
+    --fonte1: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    --fonte3: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --fonte4: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+/* ESTILOS GERAIS */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(179, 177, 177);
+    }
+
+
+
+img{
+    width: 100%;
+    display: block;
+}
+
+body {
+    
+    background-size:  cover ;
+    color: var(--cor1);
+
+    background-image: url(../Imagens/xshjp5p9ega71.png);
+    background-size: cover;
+    
+
+    height: 100%;
+}
+.BACK2{
+    background-color: #000000d2;
+    height: 100VH;
+}
+
+/* HEADER E NAV */
+
+header{
+    background-color:#000000e0;
+    padding: 20px 0px ;
+}
+
+header h1{
+    color: var(--cor1);
+    text-align: CENTER;
+    font-size: 2EM;
+}
+
+nav {
+    background-color: var(--cor4);
+}
+
+nav div.navegação ul{
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    margin: auto;
+}
+
+nav div.navegação ul li{    
+    
+    font-size: .8EM;
+    padding: 5px 10px
+    
+}
+
+nav div.navegação ul li:hover{
+    background-color: var(--cor1);
+    
+
+    
+}
+
+nav div.navegação ul li A:hover{
+    color: var(--cor3);
+}
+
+
+
+/*MAIN*/
+
+
+MAIN>SECTION{
+    width: 90%;
+    
+    margin:  3% AUTO;
+
+    box-shadow: 0PX 0PX 15PX #73222975 ;
+    
+
+    
+}
+
+MAIN SECTION H2{
+    background-color:var(--cor1);
+    color: #000000;
+    text-align: CENTER;
+    padding: 5PX;
+}
+
+MAIN SECTION P{
+    background-color: rgb(52, 71, 71);
+    text-align: CENTER;
+    padding: 5PX;
+
+    background-color:var(--cor1);
+    color: #000000;
+}
+
+/* CONTEÚDO*/
+
+section.escolhamapas{
+    background-color: #2D2E2F
+    ;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;   
+
+}
+
+div.escolhamapasitem{
+    background-color: #5e181b;
+    font-size: .7em;
+    margin: 5px;
+    text-align: center;
+    
+
+}
+
+
+   
+
+
+section.exebiçoes ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: #5e181b;
+}
+
+section.mapaescolhido{
+    margin: 10px;
+
+
+
+}
+section.mapaescolhido div>img{
+    width: 50vw;
+    margin: auto;
+
+
+
+}
+
+
+/*FOOTTER*/
+
+FOOTER{
+    background-color: var(--cor4) ;
+    text-align: CENTER;
+    font-size: .8EM;
+
+    
+
+}

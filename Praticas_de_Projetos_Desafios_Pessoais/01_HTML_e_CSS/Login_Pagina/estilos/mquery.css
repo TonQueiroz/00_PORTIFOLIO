@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+
+/* Folha de Estilo de Media Queries*/
+
+:root {
+
+    --cor1:#5f2c82;
+    --cor2:#40a09d;
+
+    --fontepadrao:Arial, Helvetica, sans-serif;
+    --fontetit:Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-image: linear-gradient(to top, var(--cor2), var(--cor1));
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+
+
+    section{
+        width: 90vw;
+        max-width: 800px;
+        
+
+
+    }
+
+    section div#divimagem{
+        
+            margin: 0px;
+        padding: 0px;
+        float: left;
+        width: 30%;
+        height: 100%;
+
+
+    }
+
+    section div#divlogin{
+        float: right;
+        width: 70%;
+        height: 100%;
+        margin: 0px;
+        padding: 15px;
+
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    section{ 
+        width: 80%;
+        max-width: 1200px;
+        }
+
+        section div#divimagem {
+        float: right;
+        width: 40%;
+        height: 100%;  
+
+
+    }    
+
+    section div#divlogin{
+        float: left;
+        width: 60%;
+        height: 100%;
+
+
+    }
+
+    p > h1{
+        font-size: 5em;
+    }
+
+
+
+}

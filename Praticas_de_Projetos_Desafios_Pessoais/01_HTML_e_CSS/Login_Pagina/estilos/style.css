@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+
+/* Folha de Estilo Padrão*/
+
+/*
+Paleta de Cores
+Verde: #40a09d
+lilas: #5f2c82
+
+*/
+
+*{ 
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+}
+    
+
+:root {
+
+    --cor1:#5f2c82;
+    --cor2:#40a09d;
+
+    --fontepadrao:Arial, Helvetica, sans-serif;
+    --fontetit:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+    body, html{ 
+        background-color: var(--cor1);
+        font-family: var(--fontepadrao);
+        
+    }
+
+    main{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+    
+    
+    section{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+        overflow: hidden;
+
+
+        border-radius: 30px 30px;
+        width: 250px;
+        height: 500px;
+        
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.523);
+
+        transition: width .5s, height .5s;
+        transition-timing-function: ease;
+        
+
+    }
+
+    div > h1 {
+        text-align: center;
+    }
+
+    main  div#divlogin{  
+        display: block;      
+        height: 300px;        
+        padding: 15px;
+        background-color: aliceblue;      
+        
+        
+        
+    }
+    
+    main  div#divimagem { 
+        display: block;       
+        height: 200px;
+        width: 100%;
+        background-image: url(../Imagens/pexels-dmitry-zvolskiy-1544420.jpg);
+        background-repeat:  no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-color: #40a09d;
+        
+    }
+
+    form { 
+        text-align: center;
+        padding: 6px;
+    }   
+
+
+
+@media screen and (orientation:portarit) {
+}

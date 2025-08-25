@@ -1,0 +1,195 @@
+@import url('font.whitney.css');
+@import url('font.ginto.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-style: arial;
+}
+
+:root{
+    --marca: #5865f2;
+    --marca-gradient: linear-gradient(90deg,#8ea1e1,#7289da);
+    --cinzasuave: #99aab5;
+    --pretosuave: #2c2f33;   
+    --off-white: #f6f6f6;
+    --branco: #fff;
+    --pretoMaisSuave: #23272a;    
+    --preto: #000;    
+    /*--page-max-width: 1260px;
+    --num-grid-columns: 4;
+    --page-gutter: 24px;
+    --section-spacing: 56px;*/
+    --font-primary: "Whitney Book Regular","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-display: "GintoNord Bold Normal","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-headline: "GintoNord Black","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-monospace: "Menlo","Consolas","Monaco",monospace;
+    --font-glitch: "ArchivoBlack","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-cursive: "Reenie Beanie","Comic Sans MS",cursive,sans-serif;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--marca);
+    color: var(--branco);
+    font-family: var(--font-primary);
+    
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--off-white);
+}
+
+a:hover{
+    cursor: pointer;
+}
+/* todas as Sections*/
+
+
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+
+    color: rgb(252, 252, 252);
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+nav a{
+    margin: 5px;
+}
+
+nav img{
+    scale: 70%;
+}
+
+
+#btEntrar{
+    background-color: rgb(255, 255, 255);
+
+    padding: 5px 8px;
+
+    border-radius: 15px;
+
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: ce;
+
+    width: 100vw;
+    height: 550px;
+
+}
+
+ /*primeira seção "Imagine um lugar*/
+#sec1{
+    /*Todos sec são flex por que ta no section geral*/
+    justify-content: center;
+    height: 550px;
+    
+    
+    
+    background-image: url('../img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    
+    
+}
+
+
+
+#divImagine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#divImagine h1{
+    font-size: 50px;
+    font-family: 'GintoNord Black';
+    text-align: center;    
+    
+}
+
+#divImagine p{
+    font-size: 18px;
+    width: 50vw;
+    max-width: 730px;
+    text-align: center;
+
+    
+    
+}
+
+#divImagineLink{
+    display: flex;
+}
+
+#divImagineLink a{
+
+    display: flex;
+    flex-wrap: 1;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    
+
+    
+    margin: 40px 15px;
+    padding: 25px;
+    
+    border-radius: 25px;
+    
+    text-align: center;
+    
+    font-size: 20px;
+    font-weight: bold;
+
+
+
+    
+    
+
+}
+
+#btBaixar{
+    background-color: var(--off-white);
+    color: var(--preto);
+    
+}
+
+
+#btNav{
+    background-color: var(--off-white);
+    color: var(--off-white);
+    background-color: var(--pretosuave);    
+}
+#btBaixar img{
+    padding: 0PX 4PX;
+}
+
+
+

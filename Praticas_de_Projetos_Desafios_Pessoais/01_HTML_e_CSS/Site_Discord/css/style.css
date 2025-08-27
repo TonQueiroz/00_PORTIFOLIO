@@ -4,8 +4,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
+    box-sizing: border-box;    
     font-style: arial;
 }
 
@@ -91,13 +90,26 @@ main{
     flex-direction: column;
 }
 
-section{
+/*Configuração base de todas as seções com conteúdo*/
+.SeçãoConteudo{
     display: flex;
     flex-direction: column;
-    align-items: ce;
+    align-items: center;
+    justify-content: space-around;
 
     width: 100vw;
     height: 550px;
+    
+    background-color: #111111;
+
+}
+/*Configuração base de todas as Div com conteúdo*/
+.divConteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 
 }
 
@@ -107,8 +119,6 @@ section{
     justify-content: center;
     height: 550px;
     
-    
-    
     background-image: url('../img/fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,15 +127,12 @@ section{
     
 }
 
-
-
-#divImagine{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+div img{
+    /*Todas as imagens dentro de div vão se ajustar a elas */
+    max-width: 100%;
+    height: auto;
+    display: block
 }
-
 
 #divImagine h1{
     font-size: 50px;
@@ -135,12 +142,9 @@ section{
 }
 
 #divImagine p{
-    font-size: 18px;
-    width: 50vw;
+    font-size: 18px;    
     max-width: 730px;
-    text-align: center;
-
-    
+    text-align: center;    
     
 }
 
@@ -155,27 +159,18 @@ section{
     flex-shrink: 1;
     flex-grow: 1;
 
-    
-
-    
     margin: 40px 15px;
-    padding: 25px;
-    
-    border-radius: 25px;
-    
-    text-align: center;
+    padding: 25px;    
+    border-radius: 25px;   
     
     font-size: 20px;
     font-weight: bold;
-
-
-
-    
-    
+     text-align: center;    
 
 }
 
 #btBaixar{
+
     background-color: var(--off-white);
     color: var(--preto);
     
@@ -187,9 +182,183 @@ section{
     color: var(--off-white);
     background-color: var(--pretosuave);    
 }
+
 #btBaixar img{
     padding: 0PX 4PX;
 }
+
+/*Segunda seção "Crie um espaço*/
+
+#sec2, #sec4{
+    background-color: var(--branco);
+}
+
+#sec3, #sec5{
+    background-color: var(--off-white);
+}
+
+
+.classDivConteudo2a4{ /*Div's da seção 2 a seção 4*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    width: 80%;
+    max-width: 1100px;
+
+}
+
+.classDivImg2a4{ /*Div's de imagens da seção 2 a seção 4*/
+    width: 70%;/*REVER*/    
+}
+
+
+.classdivTXT2a4{     /*Div's de Textos da seção 2 a seção 4*/
+    width: 40%;
+    max-width: 360px;
+    color: var(--preto);
+}
+.classdivTXT2a4 h2{ /*Títulos <h2> de Textos da seção 2 a seção 4*/
+    line-height: 120%;    
+    font-size: 48px;
+    font-family: var(--font-display);    
+}
+
+.classdivTXT2a4 p{ /*paragrafos <p> de Textos da seção 2 a seção 4*/
+    line-height: 120%;    
+    font-size: 18px;
+    line-height: 1.625; 
+}
+
+/*Seção 5 -- é um pouco diferente */
+
+#sec5{
+    height: 1100px;
+    padding: 80px;
+    
+    
+}
+
+#divTXTSec5{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+
+    color: var(--preto)
+    
+}
+
+#divTXTSec5 h2{
+    width: 70%;
+    
+    text-align: center;
+
+    line-height: 120%;    
+    font-size: 36px;
+    font-family: var(--font-headline);
+    text-transform: uppercase;
+
+}
+
+#divTXTSec5 p{
+    width: 70%;
+    line-height: 120%;    
+    font-size: 18px;
+    line-height: 1.625; 
+    text-align: center;
+
+}
+
+#divImgSec5 {
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+
+#divImgSec5 img{
+    width: 80%;
+}
+
+#divTXTeBT{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
+    width: 100%;
+    display: flex;   
+
+}
+
+#divTXTeBT h3{
+    color: var(--preto);
+    background-image: url('../img/fundo-estrela.svg');
+    
+    background-size: cover;
+    
+
+    width: 500px;
+    
+    line-height: 120%;
+    
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+
+#divTXTeBT a{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;   
+    background-color: var(--marca);
+
+    padding: 10px 30px;
+    font-size: 18px;
+
+    border-radius: 20px;
+}
+#divTXTeBT a img{
+
+    padding-right: 10px;
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

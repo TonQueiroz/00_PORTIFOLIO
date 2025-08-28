@@ -59,12 +59,13 @@ nav{
     justify-content: space-around;
     align-items: center;
 
+    width: 100%;
     padding: 0px 0px 0px 0px;
 
     border: none;
     color: rgb(252, 252, 252);
 
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     background-color: #404EED;
 
@@ -82,12 +83,11 @@ nav img{
 }
 
 
-#btEntrar{
-    background-color: rgb(255, 255, 255);
-
+#btEntrar{   
     padding: 5px 12px;
-
     border-radius: 15px;
+
+    background-color: rgb(255, 255, 255);
 
     color: black;
 }
@@ -104,8 +104,8 @@ main{
     align-items: center;
     justify-content: space-around;
 
-    width: 100vw;
-    height: 550px;
+    width: 100%;
+    height: 650px;
     
     background-color: #111111;
 
@@ -124,7 +124,7 @@ main{
 #sec1{
     /*Todos sec são flex por que ta no section geral*/
     justify-content: center;
-    height: 550px;
+    height: 580px;
     
     background-image: url('../img/fundo.png');
     background-repeat: no-repeat;
@@ -335,12 +335,13 @@ div img{
     justify-content: center;
     align-items: center;
 
-    color: #ffffff;   
+    
+    margin-top: 10px;
+    padding: 10px 37px 10px 30px;
     background-color: var(--marca);
 
-    padding: 10px 37px 10px 30px;
+    color: #ffffff;    
     font-size: 18px;
-
     border-radius: 20px;
 }
 #divTXTeBT a img{
@@ -360,6 +361,7 @@ div img{
     justify-content: center;
     align-items: center;
     flex:1 1 200px;
+    width: 100%;
     background-color: var(--pretosuave);
        
 }
@@ -368,7 +370,7 @@ div img{
 
     display: flex;
     flex-direction: row;
-    width: 70vw;    
+    width: 70%;    
     height: auto;
     padding-top:70px;
     
@@ -446,17 +448,18 @@ div img{
     line-height: 180%;
     
 }
-
+/* Parte do logo discord e do Registrar*/
 #sec7{
     display: flex;    
     justify-content: center;
     align-items: center;
-    background-color: var(--pretosuave)
+    background-color: var(--pretosuave);
+    width: 100%;
 
 }
 
 
-/* Parte do logo discord e do Registrar*/
+
 
 #sec7 #divDiscRegistrar{
     display: flex;

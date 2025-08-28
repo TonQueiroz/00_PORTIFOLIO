@@ -57,28 +57,35 @@ nav{
     
     display: flex;
     justify-content: space-around;
-
     align-items: center;
 
+    padding: 0px 0px 0px 0px;
+
+    border: none;
     color: rgb(252, 252, 252);
 
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
+    background-color: #404EED;
+
+    
+
+    
 }
 
 nav a{
-    margin: 5px;
+    margin: 20px;
 }
 
 nav img{
-    scale: 70%;
+    scale: 80%;
 }
 
 
 #btEntrar{
     background-color: rgb(255, 255, 255);
 
-    padding: 5px 8px;
+    padding: 5px 12px;
 
     border-radius: 15px;
 
@@ -160,7 +167,7 @@ div img{
     flex-grow: 1;
 
     margin: 40px 15px;
-    padding: 25px;    
+    
     border-radius: 25px;   
     
     font-size: 20px;
@@ -169,15 +176,20 @@ div img{
 
 }
 
-#btBaixar{
+#btBaixar {
 
     background-color: var(--off-white);
     color: var(--preto);
+    padding: 40px; 
+    padding: 25px 32px 25px 25px;   
     
 }
 
 
+
 #btNav{
+    padding: 25px; 
+
     background-color: var(--off-white);
     color: var(--off-white);
     background-color: var(--pretosuave);    
@@ -326,17 +338,19 @@ div img{
     color: #ffffff;   
     background-color: var(--marca);
 
-    padding: 10px 30px;
+    padding: 10px 37px 10px 30px;
     font-size: 18px;
 
     border-radius: 20px;
 }
 #divTXTeBT a img{
 
-    padding-right: 10px;
-    color: #fff;
+    padding-right: 10px;    
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg); /*Troca de cor do icone*/
 
 }
+
+
 
 /*Footer*/
 
@@ -345,6 +359,8 @@ div img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex:1 1 200px;
+    background-color: var(--pretosuave);
        
 }
 
@@ -352,20 +368,25 @@ div img{
 
     display: flex;
     flex-direction: row;
-
-    width: 80vw;    
-    height: 400px;
+    width: 70vw;    
+    height: auto;
+    padding-top:70px;
+    
 
 }
 
+/*Footer - Área imagine */
 #ftDivImagine {
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 30%;
     height: 300px;
-    
+    font-family: var(--font-headline);
+    font-size: 32px;
+    text-transform: uppercase;
     background-color: #2c2f33;
+    
 
 }
 
@@ -373,28 +394,94 @@ div img{
     width: 50%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
-}
-
-#ftDivImagine h4{
-
-    color: black;
-}
-
-#ftDivImagine select{
-
-    width: 50%;
+    font-size: 32px;
+    line-height: 95%;
     
 }
 
+#ftDivRedesSociais a{
+    width: 100%;    
+    font-size: 32px;
+    line-height: 95%;
+    
+}
+
+#ftDivImagine select{
+    margin: 0;
+    background-color: var(--pretosuave);
+    width: 50%;
+    color: var(--branco);
+    margin: 20PX 0PX;
+    border: NONE;
+    
+}
+
+/*Footer -  Listas */
 #ftListas{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
     width: 70%;
+    
+        
+}
+
+#ftListas p{
+    padding-top:10px;
+    padding-bottom:10px;
+    color: var(--marca);
+    
+    
+}
+
+#ftListas ul{
+    list-style-type: none;
+    font-size: 16px;
+}
+
+#ftListas li{
+    line-height: 180%;
+    
+}
+
+#sec7{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pretosuave)
 
 }
+
+
+/* Parte do logo discord e do Registrar*/
+
+#sec7 #divDiscRegistrar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70%;
+    padding: 20px;
+     
+    border-top: 0.1px solid var(--marca);
+}
+
+#sec7 #divDiscRegistrar a {
+    background-color: var(--marca);
+    padding: 12PX 25PX;
+    border-radius: 20PX;
+    
+}
+
+#ftDivRedesSociais a img { /*Troca de cor do icone*/
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
+}
+
+
 
 
 
